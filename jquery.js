@@ -4,4 +4,8 @@ var span = $('span');
 			$(element).css('color', 'red');
 		};
 	});
-console.log(span)
+var paragraph = $('p');
+	paragraph.each(function(index, element) {
+		var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
+		$(element).append(button);
+	});
